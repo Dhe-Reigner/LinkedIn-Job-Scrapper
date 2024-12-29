@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "linkedin-scraper"
+version = "0.1.0"
+description = "A LinkedIn scraper"
+authors = ["Your Name <youremail@example.com>"]
+packages = [{ include = "linkedin_scraper" }]
+
+
+
+[tool.poetry.dependencies]
+python = ">=3.9,!=3.9.7,<4.0"
+crawlee = {version = "*", extras = ["playwright", "apify"]}
+apify = "^2.1.0"
+streamlit = "^1.41.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
